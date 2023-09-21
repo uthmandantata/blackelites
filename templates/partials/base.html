@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Blackelites" />
+
+    <!-- ========== Page Title ========== -->
+    <title>Blackelites</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'img/black elites.jpg' %}" type="image/x-icon" />
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'css/bootstrap.min.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/font-awesome.min.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/themify-icons.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/elegant-icons.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/flaticon-set.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/magnific-popup.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/owl.carousel.min.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/owl.theme.default.min.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/animate.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/bootsnav.css ' %}" rel="stylesheet" />
+    <link href="{% static 'style.css ' %}" rel="stylesheet" />
+    <link href="{% static 'css/responsive.css ' %}" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+  </head>
+
+  <body class="torch-red">
+    {% include 'partials/header.html' %} {% block content %}{% endblock content %}{% include 'partials/footer.html' %}
+  </body>
+</html>

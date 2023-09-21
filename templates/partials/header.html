@@ -1,0 +1,104 @@
+<!-- Start Header Top 
+    ============================================= -->
+{% load static %}
+<div class="top-bar-area inc-pad bg-dark text-light">
+  <div class="container-full">
+    <div class="row align-center">
+      <div class="col-lg-6 info">
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Abuja</li>
+          <li><i class="fas fa-envelope-open"></i> contact@blackelites.com</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 text-right item-flex">
+        <div class="info">
+          <ul>
+            <li><i class="fas fa-clock"></i> Office Hours: 8:00 AM – 7:45 PM</li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Header Top -->
+<!-- Header 
+    ============================================= -->
+<header id="home">
+  <!-- Start Navigation -->
+  <nav class="navbar navbar-default inc-top-bar navbar-fixed navbar-transparent white bootsnav">
+    <div class="container-full">
+      <!-- Start Atribute Navigation -->
+      <div class="attr-nav">
+        <div class="call">
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="info">
+            <span>Have any question?</span>
+            <h5>+234 703 828 3206</h5>
+          </div>
+        </div>
+      </div>
+      <!-- End Atribute Navigation -->
+
+      <!-- Start Header Navigation -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img src="{% static 'img/black elites.jpg' %}" style="height: 70px" class="logo logo-display" alt="Logo" />
+          <img src="{% static 'img/black elites.jpg' %}" style="height: 70px" class="logo logo-scrolled" alt="Logo" />
+        </a>
+      </div>
+      <!-- End Header Navigation -->
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-center" data-in="#" data-out="#">
+          <li>
+            <a href="{% url 'home' %}" class="">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Team</a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'umar_naveed' %}">Our Ceo</a></li>
+              <li><a href="{% url 'team' %}">Team Members</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="{% url 'services' %}">Services</a>
+          </li>
+          <li>
+            <a href="{% url 'blog' %}">Blog</a>
+          </li>
+          <li>
+            <a href="{% url 'contact' %}">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <!-- End Navigation -->
+</header>
+<!-- End Header -->
